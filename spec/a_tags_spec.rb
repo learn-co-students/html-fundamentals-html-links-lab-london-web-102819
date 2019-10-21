@@ -16,7 +16,7 @@ RSpec.describe 'index.html' do
     expect(a.attributes["href"]).to match(/.html/) , "The correct relative path (about.html) was not found on the second 'a' tag"
   end
 
-  it 'contains a <a> tag that uses the target attribute' do
+  #it 'contains a <a> tag that uses the target attribute' do
     a = parsed_html.search('a')[2]
     expect(a).to_not be_nil, "A third <a> tag was not found"
     expect(a.attributes["target"]).to_not be_nil, "No target attribute was found on the third 'a' tag"
